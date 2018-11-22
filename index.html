@@ -73,6 +73,9 @@
                 <div>
 				  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#loginModal">Login</button>
 						
+
+
+
 						<!-- Modal -->
 							<div class="modal fade" id="loginModal" role="dialog">
 								<div class="modal-dialog">
@@ -83,14 +86,11 @@
 										</div>
 										<div class="modal-body">
 
-											<form>	
-												<input	id="login" type="login"	name="login" placeholder="Login" class="form-control" ><br>
-												<input	id="password" type="password"	name="password" placeholder="Senha" class="form-control" ><br>
-												
-                                                <input	type="submit"	value="Enviar" class="btn btn-default">
-                                                <button onclick="calcularTotal()">GO</button>	
-
-                                            </form>
+											<form id="form-login">	
+												<input	type="login"	name="login" placeholder="Login" class="form-control" ><br>
+												<input	type="password"	name="password" placeholder="Senha" class="form-control" ><br>
+												<input	type="submit"	value="Enviar" class="btn btn-default">
+                        </form>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
@@ -102,29 +102,30 @@
                 </div>
                 </nav>
 			</div>
-        </div>
+    </div>
         
-        <div class="container">
-		<div class="tab-content">
+    <div class="container">
+			<div class="tab-content">
         <div id="home" class="tab-pane fade">
 				<h3>Bem-Vindo ao Reserva Lanches!!!</h3>
 				<p>Aqui você pode reservar o lanche em seu quiosque favorito!!!!</p><br>
-				<p>Logue-se e <strong>garanta já</strong> seu lanchinho!!! </p>
-                
-			</div>
+				<p>Logue-se e <strong>garanta já</strong> seu lanchinho!!! </p>     
+				</div>
+
         <div id="quiosques" class="tab-pane fade">
-          <h3>Quiosques</h3>
-            
+					<h3>Quiosques</h3>
+					
+					
+
+					
         </div>
         
         <div id="reserva" class="tab-pane fade">
 				<h3>Reservar Lanche</h3>
-				
+				</div>
 			</div>
-        </div>
-        </div>
 
-        Total: <input type="text" name="total" id="total" disabled> <br>
         <script type="text/javascript" src="js/scripts.js"></script>
-	</body>
+		</div>
+		</body>
 </html>
